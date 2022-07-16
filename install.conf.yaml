@@ -1,0 +1,16 @@
+- defaults:
+  link:
+    relink: true
+    create: true
+
+- clean:
+  - '~/.config':
+    recursive: true
+
+- link:
+  # neovim
+  ~/.config/nvim/init.vim: config/nvim/init.vim
+  # fish
+  ~/.config/fish:
+    glob: true
+    path: config/fish/*
