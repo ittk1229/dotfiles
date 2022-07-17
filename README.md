@@ -4,3 +4,4 @@
 
 - fish
 - nvim
+- git

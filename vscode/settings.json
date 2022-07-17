@@ -1,0 +1,19 @@
+{
+  // wsl用のテーマ
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#05a6f0",
+    "activityBar.foreground": "#fff",
+    "activityBarBadge.background": "#f35325",
+    "activityBarBadge.foreground": "#fff"
+  },
+  // neovimの初期設定
+  "workbench.list.automaticKeyboardNavigation": false,
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/linuxbrew/.linuxbrew/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.linux": "/home/ittk/.config/nvim/init.vim",
+  "vscode-neovim.useCtrlKeysForInsertMode": false,
+  "vscode-neovim.useCtrlKeysForNormalMode": true,
+  // 表示設定
+  "editor.scrollBeyondLastLine": false,
+  "editor.minimap.enabled": false
+}

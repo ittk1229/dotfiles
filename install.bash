@@ -5,6 +5,9 @@ set -u
 # 直下
 ln -s "$HOME/dotfiles/gitconfig" "$HOME/.gitconfig"
 
+# vscode
+ln -s "$HOME/dotfiles/vscode/settings.json" "$HOME/.vscode-server/data/Machine/settings.json"
+
 # cnfigファイル下
 arr=(\
  "nvim/init.vim"\
@@ -19,7 +22,9 @@ arr=(\
  "fish/functions/fisher.fish"\
 )
 
+# neovim
 mkdir -p "$HOME/.config/nvim"
+
 mkdir -p "$HOME/.config/fish/functions"
 
 for path in ${arr[@]}; do

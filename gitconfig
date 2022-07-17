@@ -3,3 +3,5 @@
 	name = ittk-93
 [ghq]
 	root = /home/ittk/src
+[init]
+	defaultBranch = main
