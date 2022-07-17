@@ -2,10 +2,10 @@
 
 set -u
 
-BASEDIR=$(dirname $0)
-cd $BASEDIR
-
-arr=("nvim/init.vim"
+arr=(\
+ "nvim/init.vim"\
+ "nvim/dein.toml"\
+ "nvim/dein_lazy.toml"\
  "fish/config.fish"\
  "fish/fish_plugins"\
  "fish/fish_variables"\
@@ -20,6 +20,5 @@ mkdir -p "$HOME/.config/nvim"
 mkdir -p "$HOME/.config/fish/functions"
 
 for path in ${arr[@]}; do
-    echo "ln -s" "$HOME/dotfiles/config/$path" "$HOME/.config/$path"
     ln -s "$HOME/dotfiles/config/$path" "$HOME/.config/$path"
 done
