@@ -2,6 +2,10 @@
 
 set -u
 
+# 直下
+ln -s "$HOME/dotfiles/gitconfig" "$HOME/.gitconfig"
+
+# cnfigファイル下
 arr=(\
  "nvim/init.vim"\
  "nvim/dein.toml"\
@@ -15,7 +19,6 @@ arr=(\
  "fish/functions/fisher.fish"\
 )
 
-# neovim
 mkdir -p "$HOME/.config/nvim"
 mkdir -p "$HOME/.config/fish/functions"
 
